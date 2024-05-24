@@ -8,20 +8,43 @@ Xanadu is an Ordinals-based protocol that provides a map interface enabling user
 ## .xan JSON Structure
 ```json
 {
-    "p": "xns",
-    "inscription_number": "454356",
-    "op": "reg",
-    "domain": "xanadu",
-    "name": "example.xan",
-    "inscription_timestamp": "2023-10-05T14:48:00Z",
-    "subplots": ["admin.example.xan", "rental.example.xan"],
-    "zones": "32",
-    "zone_power": "98",
-    "avatar": "7f9c06b712c5b60c0b66868c69568b2d198533553c347cd732fc3c87e62efe86i0",
-    "url": "xxxx.xxx.xx",
-    "socials": ["@examplehandle", "x.com/example"],
-    "rev": "bc1q4j3kt5psz5r87kz5a8gnx2vvsdlcmfz2u2pxxw",
-    "relay": "85b10531435304cbe47d268106b58b57a4416c76573d4b50fa544432597ad670i0"
+    "protocol": "xns",  // Protocol identifier for Xanadu Name Service
+    "inscription_number": "654321",  // Unique number identifying the inscription (Bitcoin Block Height)
+    "operation": "register",  // Operation type (register, update, sell, transfer, list, burn, create, inscribe, claim,   delegate, distribute)
+    "domain": "654321.xan",  // Root domain for the inscription
+    "name": "mattty.xan",  // Full name of the parcel (Length dictated by root domain length)
+    "parcels": "stream.mattty.xan, donate.mattty.xan",  // Full name of the parcels, including hierarchy
+    "inscription_timestamp": "2023-10-05T14:48:00Z",  // Timestamp of the inscription
+    "parcels": [
+        {
+            "parcel_id": "x.mattty.xan",  // Unique identifier for the parent parcel
+            "zones": "5",  // Number of zones within the parcel
+            "zone_power": "50",  // Total Power level of the zones
+            "zones": [
+                {
+                    "name": "donate.mattty.xan",  // Name of the parcel
+                    "content": "dapp",  // Content hosted within the parcel
+                    "attributes": {
+                        "type": "webpage",  // Type of content
+                        "description": "ordinals donation page",  // Description of the parcel
+                        "avatar": "7f9c06b712c5b60c0b66868c69568b2d198533553c347cd732fc3c87e62efe86i0",  // Avatar image hash
+                        "url": "donate.mattty.xan",  // URL associated with the parcel
+                        "socials": ["@mattyverse", "twitch.com/mattyverse"],  // Social media links
+                        "rev": "bc1q4j3kt5psz5r87kz5a8gnx2vvsdlcmfz2u2pxxw",  // Revision information
+                        "relay": "85b10531435304cbe47d268106b58b57a4416c76573d4b50fa544432597ad670i0"  // Relay information
+                    }
+                },
+                    "name": "stream.mattty.xan",  // Name of the parcel
+                    "content": "code",  // Content hosted within the parcel
+                    "attributes": {
+                        "type": "link",  // Type of content
+                        "description": "Link to my stream!",  // Description of the parcel
+                        "url": "twitch.com/mattyverse",  // URL associated with the parcel
+                        
+                }
+            ]
+        }
+    ]
 }
 ```
 
