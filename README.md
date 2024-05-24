@@ -96,18 +96,6 @@ This reference table includes just some of the possible fields that Xanadu suppo
 | `data.list.relay`    | URL of the relay used for the inscription                                                     | `""`                                                   |
 | `data.list.tick`     | Ticker symbol associated with the xanadu                                                      | `"ordi"`                                               |
 | `data.list.max`      | Maximum value associated with the xanadu                                                      | `"21000000.000000000000000000"`                        |
-| `data.list.limit`    | Limit value associated with the xanadu                                                        | `"1000.000000000000000000"`                            |
-| `data.list.decimals` | Number of decimal places for the xanadu value                                                 | `18`                                                   |
-| `data.list.minted`   | Minted value of the xanadu
-
-                                                                    | `"21000000.000000000000000000"`                        |
-| `data.list.mint_progress` | Mint progress of the xanadu                                                          | `"1.000000"`                                           |
-| `data.list.transactions` | Number of transactions associated with the xanadu                                      | `309393`                                               |
-| `data.list.holders`  | Number of holders of the xanadu                                                               | `20368`                                                |
-| `data.list.deployer` | Bitcoin address of the deployer of the xanadu                                                 | `"bc1pxaneaf3w4d27hl2y93fuft2xk6m4u3wc4rafevc6slgd7f5tq2dqyfgy06"` |
-| `data.list.deploy_time` | Timestamp of the deployment of the xanadu                                               | `1678248991`                                           |
-
-
 
 ### Xanadu Zone Ranks and Power Boost Traits
 This table lists various attributes and ranks that can be associated with Bitcoin blocks and are applied within the Xanadu ecosystem.
